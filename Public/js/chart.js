@@ -43,14 +43,14 @@ export const myChart = async () => {
                 label: '#',
                 data: [champion, rookie, ultimate, training, mega, intraining, fresh, armor],
                 backgroundColor: [
-                    'rgba(255, 99, 132, 0.2)',
-                    'rgba(54, 162, 235, 0.2)',
-                    'rgba(255, 206, 86, 0.2)',
-                    'rgba(75, 192, 192, 0.2)',
-                    'rgba(153, 102, 255, 0.2)',
-                    'rgba(255, 159, 64, 0.2)',
-                    'rgba(23, 82, 100, 0.2)',
-                    'rgba(205, 139, 44, 0.2)'
+                    'rgba(255, 99, 132)',
+                    'rgba(54, 162, 235)',
+                    'rgba(255, 206, 86)',
+                    'rgba(75, 192, 192)',
+                    'rgba(153, 102, 255)',
+                    'rgba(255, 159, 64)',
+                    'rgba(23, 82, 100)',
+                    'rgba(205, 139, 44)'
                 ],
                 borderColor: [
                     'rgba(255, 99, 132, 1)',
