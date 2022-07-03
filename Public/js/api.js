@@ -1,7 +1,6 @@
-const ID = 0
+const ID = 15 //Digimon Inicial que se muestra en la pantalla
 let VarOpt = ''
 const APIDigimon = 'https://digimon-api.vercel.app/api/digimon/';
-console.log(APIDigimon);
 
 export const getDigimon = async () => {
     try{
@@ -15,6 +14,7 @@ export const getDigimon = async () => {
         document.getElementById("digimonLevel").innerHTML = 'Level: '+data[`${ID}`].level
         document.getElementById("digimonImage").innerHTML = `<img src="${data[`${ID}`].img}" class="card-img-top" alt="">`
         document.getElementById("digimonOpt").innerHTML = VarOpt
+        document.getElementById("digimonOpt").value = `${ID}` 
         return data  
 
     }catch{

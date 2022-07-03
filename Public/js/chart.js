@@ -5,6 +5,7 @@ const data2 = await getDigimon();
 let champion = 0, rookie = 0, ultimate = 0, training = 0, mega = 0, intraining = 0, fresh = 0, armor = 0;
 
 for (const property in data2) {
+<<<<<<< HEAD
     if (data2[property].level == 'Champion')
         champion++;
     if (data2[property].level == 'Rookie')
@@ -21,6 +22,16 @@ for (const property in data2) {
         fresh++;
     if (data2[property].level == 'Armor')
         armor++;
+=======
+    if (data2[property].level=='Champion') champion++;
+    if (data2[property].level=='Rookie') rookie++;
+    if (data2[property].level=='Ultimate') ultimate++;
+    if (data2[property].level=='Training') training++;
+    if (data2[property].level=='Mega') mega++;
+    if (data2[property].level=='In Training') intraining++;
+    if (data2[property].level=='Fresh') fresh++;
+    if (data2[property].level=='Armor') armor++;  
+>>>>>>> efc73633891ef6c7f7257373b2a8855947e768a1
 }
     
 export const myChart = async () => {
