@@ -1,5 +1,4 @@
 import {getDigimon} from './api.js'
-console.log('prueba')
 export const ctx = document.getElementById('myChart').getContext('2d');
 const data2 = await getDigimon();
 
