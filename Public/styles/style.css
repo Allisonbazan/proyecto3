@@ -1,7 +1,6 @@
 *{
     margin: 0px;
     padding: 0px;
-    box-sizing: border-box;
 }
 
 .menu-background{
@@ -12,15 +11,40 @@
     color: #50ef50 !important;
 }
 
+.grafic{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .chart{
-    margin: 18px !important;
-    width: 90%;
-    height: 90%;
+    margin: 10px !important;
+    width: 75% !important;
+    height: 75% !important;
+    align-items: center;
+    justify-content: center;
 }
 
 .cont1{
+    margin: 10px;
     display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
 }
+.cont2{
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.card{
+    justify-content: center !important;
+    align-items: center !important;
+    text-align: justify;
+}
+
 .footer{
     display: flex;
     flex-direction: row;

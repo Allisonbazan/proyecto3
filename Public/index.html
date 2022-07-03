@@ -20,35 +20,37 @@
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary menu-background">
       <div class="container-fluid">
         <a class="navbar-brand text-color" href="index.html">Manejo de API Digimon</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01"
-          aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
       </div>
     </nav>
   </header>
   <main>
     <!-- Container -->
     <div>
+
       <div class="container">
-        <div class="cont1">
-          <div>Digimon:</div>
-          <select name="select" id="digimonOpt">
-          </select>
-          <button type="button" class="btn btn-success" id="digimonSearch">Buscar</button>
-        </div>
-      </div>
-      <div class="container">
-        <div class="card" style="width: 18rem;">
-          <div id="digimonImage"></div>
-          <div class="card-body">
-            <h5 class="card-title" id="digimonName"></h5>
-            <p class="card-text" id="digimonLevel"></p>
+        <div class="cont1 row g-3">
+            <div class="col-auto">
+              <label for="digimonOpt" class="visually-hidden">Selecciona un digimon: </label>
+              <select name="select" id="digimonOpt" class="form-select form-select-lg mb-8">
+              </select>
+              <button type="button" class="btn btn-success" id="digimonSearch">Buscar</button>
           </div>
         </div>
-        <div id="digimonName"></div>
+        <div class="cont2">
+          <div class="card" style="width: 20rem;">
+            <h5 class="card-title" id="digimonName"></h5>
+            <div id="digimonImage"></div>
+            <div class="card-body">
+              <p class="card-text text-center" id="digimonLevel"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container grafic">
+<!--         <div id="digimonName"></div>
         <div id="digimonImage"></div>
-        <div id="digimonLevel"></div>
+        <div id="digimonLevel"></div> -->
         <canvas class="chart" id="myChart"></canvas>
         <br />
         <br />

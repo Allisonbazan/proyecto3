@@ -11,7 +11,7 @@ export const getDigimon = async () => {
             VarOpt = VarOpt+`<option value="${property}">${data[property].name}</option>`
         }
         document.getElementById("digimonName").innerHTML = data[`${ID}`].name
-        document.getElementById("digimonLevel").innerHTML = 'Level: '+data[`${ID}`].level
+        document.getElementById("digimonLevel").innerHTML = '<h6><strong> LEVEL: </strong> </h6>'+data[`${ID}`].level
         document.getElementById("digimonImage").innerHTML = `<img src="${data[`${ID}`].img}" class="card-img-top" alt="">`
         document.getElementById("digimonOpt").innerHTML = VarOpt
         document.getElementById("digimonOpt").value = `${ID}` 
