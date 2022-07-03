@@ -1,0 +1,83 @@
+import {getDigimon} from './api.js'
+console.log('prueba')
+export const ctx = document.getElementById('myChart').getContext('2d');
+const data2 = await getDigimon();
+
+let champion=0,rookie=0,ultimate=0,training=0,mega=0,intraining=0,fresh=0,armor=0;
+
+for (const property in data2) {
+    if (data2[property].level=='Champion')
+    champion++;
+    if (data2[property].level=='Rookie')
+    rookie++;
+    if (data2[property].level=='Ultimate')
+    ultimate++;
+    if (data2[property].level=='Training')
+    training++;
+    if (data2[property].level=='Mega')
+    mega++;
+    if (data2[property].level=='In Training')
+    intraining++;
+    if (data2[property].level=='Fresh')
+    fresh++;
+    if (data2[property].level=='Armor')
+    armor++;  
+}
+
+export const myChart = async() => {
+    new Chart(ctx, {
+        type: 'bar',
+        data: {
+            labels: ['Champion', 'Rookie', 'Ultimate', 'Training', 'Mega', 'In Training', 'Fresh', 'Armor'],
+            datasets: [{
+                label: '#',
+                data: [champion,rookie, ultimate, training, mega, intraining, fresh, armor],
+                backgroundColor: [
+                    'rgba(255, 99, 132, 0.2)',
+                    'rgba(54, 162, 235, 0.2)',
+                    'rgba(255, 206, 86, 0.2)',
+                    'rgba(75, 192, 192, 0.2)',
+                    'rgba(153, 102, 255, 0.2)',
+                    'rgba(255, 159, 64, 0.2)',
+                    'rgba(23, 82, 100, 0.2)',
+                    'rgba(205, 139, 44, 0.2)'
+                ],
+                borderColor: [
+                    'rgba(255, 99, 132, 1)',
+                    'rgba(54, 162, 235, 1)',
+                    'rgba(255, 206, 86, 1)',
+                    'rgba(75, 192, 192, 1)',
+                    'rgba(153, 102, 255, 1)',
+                    'rgba(255, 159, 64, 1)',
+                    'rgba(23, 82, 100, 1)',
+                    'rgba(205, 139, 44, 1)'
+                ],
+                borderWidth: 1
+            }]
+        },
+        options: {
+            scales: {
+                y: {
+                    beginAtZero: true,
+                    title: {
+                    display: true,
+                    text: 'Digimones'}
+                },
+                x: {
+                    beginAtZero: true,
+                    title: {
+                    display: true,
+                    text: 'Niveles'}
+                }
+            },
+            plugins: {
+                title: {
+                  display: true,
+                  text: 'Cantidad de Digimones por Nivel'
+                }}
+        }
+        
+    });
+}
+
+myChart();
