@@ -25,11 +25,14 @@
 }
 
 .cont1{
-    margin: 10px;
+    margin: 25px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: row;
+    color: aliceblue;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
 }
 .cont2{
     margin: 20px;
@@ -40,6 +43,9 @@
 }
 
 .card{
+    opacity: 80%;
+    background-color: #010301;
+    color: aliceblue;
     justify-content: center !important;
     align-items: center !important;
     text-align: justify;
@@ -57,3 +63,12 @@
     bottom: 0;
     width: 100%;
 }
+
+body {
+    margin: 0;
+    background-image: url(../images/fondo-1-1920x1080-dark.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+  }

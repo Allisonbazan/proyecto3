@@ -17,9 +17,28 @@
 <body>
   <header>
     <!-- Menu -->
-    <nav class="navbar navbar-dark bg-dark">
+
+    <!-- OPCIÓN 1 -->
+    <!-- <nav class="navbar navbar-dark bg-dark">
       <div class="container-fluid">
-        <a class="navbar-brand" href="index.html"><img src="images/logo-1.png" alt="digimon-logo-1" width="10%"><strong>    Manejo de API Digimon</strong></a>
+        <a class="navbar-brand" href="index.html"><img src="images/logo-1.png" alt="digimon-logo-1" width="10%"><strong>
+            Manejo de API Digimon</strong></a>
+      </div>
+    </nav> -->
+
+    <!-- OPCION 2 -->
+    <nav class="navbar navbar-expand-lg bg-dark" >
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html"><img src="images/logo-1.png" alt="digimon-logo-1" width="10%"><strong>
+          Manejo de API Digimon</strong></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="cont1">
+            <label for="digimonOpt" class="visually-hidden">Selecciona un Digimon: </label>
+            <select name="select" id="digimonOpt" class="form-select" aria-label="Default select example">
+            </select>
+            <button type="button" class="btn btn-success" id="digimonSearch">Buscar</button>
         </div>
       </div>
     </nav>
@@ -27,35 +46,38 @@
   <main>
     <!-- Container -->
     <div>
-
       <div class="container">
-        <div class="cont1 row g-3">
-            <div class="col-auto">
-              <label for="digimonOpt" class="visually-hidden">Selecciona un digimon: </label>
-              <select name="select" id="digimonOpt" class="form-select form-select-lg mb-8">
-              </select>
-              <button type="button" class="btn btn-success" id="digimonSearch">Buscar</button>
+
+        <!-- OPCON 1 MENU -->
+        <!-- <div class="cont1 row g-3">
+          <div class="col-auto">
+            <label for="digimonOpt" class="visually-hidden">Selecciona un Digimon: </label>
+            <select name="select" id="digimonOpt" class="form-select" aria-label="Default select example">
+            </select>
+            <button type="button" class="btn btn-success" id="digimonSearch">Buscar</button>
           </div>
-        </div>
+        </div> -->
         <div class="cont2">
-          <div class="card" style="width: 20rem;">
+          <div class="card" style="width: 18rem;">
             <h5 class="card-title" id="digimonName"></h5>
             <div id="digimonImage"></div>
             <div class="card-body">
+              
               <p class="card-text text-center" id="digimonLevel"></p>
             </div>
           </div>
         </div>
       </div>
+    </div>
 
-      <div class="container grafic">
-<!--         <div id="digimonName"></div>
+    <div class="container grafic">
+      <!-- <div id="digimonName"></div>
         <div id="digimonImage"></div>
         <div id="digimonLevel"></div> -->
-        <canvas class="chart" id="myChart"></canvas>
-        <br />
-        <br />
-      </div>
+      <canvas class="chart" id="myChart"></canvas>
+      <br />
+      <br />
+    </div>
     </div>
   </main>
 
