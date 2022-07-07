@@ -54,11 +54,14 @@ export const myChart = async () => {
             responsive: true,
             plugins: {
                 legend: {
+                    labels:{
+                        color:'#fff'
                     position: 'top',
                 },
                 title: {
                     display: true,
                     text: 'Cantidad de Digimones por Nivel'
+                    color: '#fff',
                 },
             }
         }
