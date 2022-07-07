@@ -56,11 +56,13 @@ export const myChart = async () => {
                 legend: {
                     labels:{
                         color:'#fff'
+                    
+                },
                     position: 'top',
                 },
                 title: {
                     display: true,
-                    text: 'Cantidad de Digimones por Nivel'
+                    text: 'Cantidad de Digimones por Nivel',
                     color: '#fff',
                 },
             }
