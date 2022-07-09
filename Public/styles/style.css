@@ -1,6 +1,41 @@
 *{
     margin: 0px;
-    padding: 0px;
+    padding: 0px;  
+}
+body {
+    margin: 0;
+    background-image: url(../images/fondo-1-1920x1080-dark.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    min-height: 90vh;
+  }
+
+main{
+    margin-top: 110px;
+}
+/*Este contendor contiene el estilo para dejar la navbar de boostrap en la parte superior 
+de la pagina aunque el usuario haga scroll*/
+.container-navBar{
+    /*Fixed
+    El elemento es removido del flujo normal del documento, sin crearse espacio alguno 
+    para el elemento en el esquema de la página. Es posicionado con relación al bloque contenedor 
+    inicial establecido por el viewport*/
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    /*La propiedad CSS z-index indica el orden de 
+    un elemento posicionado y sus descendientes. Cuando varios elementos se superponen, 
+    los elementos con mayor valor z-index cubren aquellos con menor valor. 
+    
+    Se coloca 1030 porque es el valor que ocupa por defecto boostrap al tomar la navbar fixed
+    de sus ejemplos
+    */
+    z-index: 1030;;
 }
 
 .menu-background{
@@ -64,11 +99,6 @@
     width: 100%;
 }
 
-body {
-    margin: 0;
-    background-image: url(../images/fondo-1-1920x1080-dark.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-  }
+#Footer {
+    margin-top: auto;
+}

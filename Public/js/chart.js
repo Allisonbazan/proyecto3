@@ -20,7 +20,7 @@ export const myChart = async () => {
     Chart.defaults.font.size = 24;
     Chart.defaults.color =  'rgba(0, 0, 0)';
     new Chart(ctx, {
-        type: 'pie',
+        type: 'doughnut',
         data: {
             labels: ['Champion', 'Rookie', 'Ultimate', 'Training', 'Mega', 'In Training', 'Fresh', 'Armor'],
             datasets: [{
