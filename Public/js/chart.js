@@ -1,11 +1,10 @@
+// obtener datos de la api para grafico
 import { getDigimon } from './api.js'
 export const ctx = document.getElementById('myChart').getContext('2d');
 const data2 = await getDigimon();
-
+// Contador para los nivesles de los digimon
 let champion = 0, rookie = 0, ultimate = 0, training = 0, mega = 0, intraining = 0, fresh = 0, armor = 0;
-
 for (const property in data2) {
-    
     if (data2[property].level=='Champion') champion++;
     if (data2[property].level=='Rookie') rookie++;
     if (data2[property].level=='Ultimate') ultimate++;
@@ -16,7 +15,7 @@ for (const property in data2) {
     if (data2[property].level=='Armor') armor++;  
 
 }
-    
+// Grafico Chart en forma de pie
 export const myChart = async () => {
     Chart.defaults.font.size = 24;
     Chart.defaults.color =  'rgba(0, 0, 0)';

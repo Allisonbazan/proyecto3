@@ -1,3 +1,4 @@
+// función para buscar el digimon
 import {getDigimon} from './api.js'
 const data = await getDigimon();
 let indice=0
