@@ -17,6 +17,7 @@ body {
 main{
     margin-top: 110px;
 }
+
 /*Este contendor contiene el estilo para dejar la navbar de boostrap en la parte superior 
 de la pagina aunque el usuario haga scroll*/
 .container-navBar{
