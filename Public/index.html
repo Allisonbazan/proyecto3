@@ -17,8 +17,8 @@
 <body>
   <header>
     <!-- Menu -->
-    <div class="container-navBar">
-      <nav class="navbar navbar-expand-lg bg-dark" >
+    <div class="container-navBar backgrounds">
+      <nav class="navbar navbar-expand-lg" >
         <div class="container-fluid">
           <img src="images/logo-1.png" alt="digimon-logo-1" width="10%">
           <div class="cont1">
@@ -32,42 +32,40 @@
     </div>
   </header>
   <main>
-    <!-- Container -->
-    <div>
-      <div class="container">
-        <div class="cont2">
-          <div class="card" style="width: 18rem;">
-            <h5 class="card-title" id="digimonName"></h5>
-            <div id="digimonImage"></div>
-            <div class="card-body">
-              <p class="card-text text-center" id="digimonLevel"></p>
+    <div class="grid">
+      <div>
+        <div class="container">
+          <div class="cont2">
+            <div class="card" style="width: 18rem;">
+              <h5 class="card-title" id="digimonName"></h5>
+              <div id="digimonImage"></div>
+              <div class="card-body">
+                <p class="card-text text-center" id="digimonLevel"></p>
+              </div>
             </div>
           </div>
         </div>
       </div>
+  
+      <div class="container grafic">
+        <canvas class="chart" id="myChart"></canvas>
+      </div>
     </div>
 
-    <div class="container grafic">
-      <canvas class="chart" id="myChart"></canvas>
-    </div>
-    
   </main>
 
   <!-- Footer -->
-  <footer class="bg-dark text-white" id="Footer">
+  <footer class="backgrounds" id="Footer">
     <div class="col-md-12 d-flex justify-content-center align-items-center">
       <span class="text-muted">©2022 Proyecto DASHBOAR-COSUMO DE API, Ucamp Desarrollo Full Stack </span>
     </div>
-</footer>
-
-<!--<footer class="footer">
-    <div>
-      <span>La pagina de los Digimones - Proyecto 3</span>
-    </div>
-  </footer> -->
+  </footer>
   <!-- Scripts -->
+  <!-- ChartJS -->
   <script src="https://cdn.jsdelivr.net/npm/chart.js@3.8.0/dist/chart.min.js"></script>
   <script type="module" src="./js/main.js"></script>
+  <script type="module" src="./js/apisearch.js"></script>
+  <!-- JavaScript Boostrap5 js -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 

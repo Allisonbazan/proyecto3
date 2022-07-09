@@ -38,7 +38,7 @@ de la pagina aunque el usuario haga scroll*/
     z-index: 1030;;
 }
 
-.menu-background{
+.backgrounds{
     background-color: #010301 !important;
 }
 
@@ -101,4 +101,5 @@ de la pagina aunque el usuario haga scroll*/
 
 #Footer {
     margin-top: auto;
+    color: #fff !important;
 }
