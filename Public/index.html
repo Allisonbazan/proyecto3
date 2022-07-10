@@ -18,14 +18,14 @@
   <header>
     <!-- Menu -->
     <div class="container-navBar backgrounds">
-      <nav class="navbar navbar-expand-lg" >
+      <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
           <img src="images/logo-1.png" alt="digimon-logo-1" width="10%">
           <div class="cont1">
-              <label for="digimonOpt" class="visually-hidden">Selecciona un Digimon: </label>
-              <select name="select" id="digimonOpt" class="form-select m-3" aria-label="Default select example">
-              </select>
-              <button type="button" class="btn btn-success" id="digimonSearch">Buscar</button>
+            <label for="digimonOpt" class="visually-hidden">Selecciona un Digimon: </label>
+            <select name="select" id="digimonOpt" class="form-select m-3" aria-label="Default select example">
+            </select>
+            <button type="button" class="btn btn-success" id="digimonSearch">Buscar</button>
           </div>
         </div>
       </nav>
@@ -33,29 +33,26 @@
   </header>
   <main>
     <div class="grid">
-      <div>
-        <div class="container">
-          <div class="cont2">
-            <div class="card" style="width: 18rem;">
-              <h5 class="card-title" id="digimonName"></h5>
-              <div id="digimonImage"></div>
-              <div class="card-body">
-                <p class="card-text text-center" id="digimonLevel"></p>
-              </div>
-            </div>
+      <!-- dvi que contiene la card con los datos de cada digimon -->
+      <div class="cont2">
+       <!--  style="width: 18rem;" -->
+        <div class="card" >
+          <h5 class="card-title" id="digimonName"></h5>
+          <div id="digimonImage"></div>
+          <div class="card-body">
+            <p class="card-text text-center" id="digimonLevel"></p>
           </div>
         </div>
       </div>
-  
-      <div class="container grafic">
+      <!-- div que contiene la grafica con chartJs -->
+      <div class="grafic">
         <canvas class="chart" id="myChart"></canvas>
       </div>
     </div>
-
   </main>
 
   <!-- Footer -->
-  <footer class="backgrounds" id="Footer">
+  <footer class="backgrounds piePagina" >
     <div class="col-md-12 d-flex justify-content-center align-items-center">
       <span class="text-muted">©2022 Proyecto DASHBOAR-COSUMO DE API, Ucamp Desarrollo Full Stack </span>
     </div>
