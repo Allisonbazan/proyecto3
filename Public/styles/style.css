@@ -28,7 +28,10 @@ main{
 .text-color{
     color: #50ef50 !important;
 }
-
+/* Es para redimensionar el tamaño del logo de la página web */
+.logoNavBar{
+    width: 10%;
+}
 /*Este contendor contiene el estilo para dejar la navbar de boostrap en la parte superior 
 de la pagina aunque el usuario haga scroll*/
 .container-navBar{
@@ -51,7 +54,7 @@ de la pagina aunque el usuario haga scroll*/
 }
 /* Container para seleccionar el digimon */
 .cont1{
-    margin: 25px;
+    margin: 15px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -69,22 +72,17 @@ de la pagina aunque el usuario haga scroll*/
     margin-top: 50px;
     margin-right: 5px;
 }
-
+/* Estilo del contenedor del card */
 .cont2{
- /*    margin: 10px; 
-    width: 40%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-right: 1%; */
-
+    /* Así toma los valores margin top right bottom left */
     margin: 10px 1% 10px 10px;
     width: 40%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-
+/* Estilos para la card, se usa importan para poder sobreescribir 
+    el estilo de boostrap que da por defecto */
 .card{
     margin-left: 42%;
     padding: 15px;
@@ -95,21 +93,21 @@ de la pagina aunque el usuario haga scroll*/
     align-items: center !important;
     text-align: justify;
 }
-
+/* Estilo para el contenedor(div) de la gráfica */
 .grafic{
-
     width: 60%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-
+/* Estilo de la grafica, de igual manera se usa el importan para 
+    sobreescribir el estilo de chartJS */
 .chart{
     margin-right: 35%;
     width: 60% !important;
     height: 40% !important;
 }
-
+/* Estilo para el footer de la página */
 .piePagina {
     display: flex;
     flex-direction: row;
@@ -121,10 +119,30 @@ de la pagina aunque el usuario haga scroll*/
     color: #fff !important;
 }
 
-/*  */
+/* Query media css */
 
 /* Para 960px */
 @media only screen and (max-width: 980px) and (min-width: 821px) {
+    .logoNavBar{
+        width: 20%;
+    }
+
+    .cont1{
+        margin: 2px !important;
+        flex-direction: column;
+    }
+
+    .cont1 .labelDigimon{
+        margin-top: 2px !important;
+        margin-bottom: 2px !important;
+    }
+
+    .botonDigimon{
+        width: 90%;
+    }
+
+    /* Para hacer que el boton sea del tamaño del select */
+
     .grid{
         display: flex;
         flex-direction: column;
@@ -142,46 +160,47 @@ de la pagina aunque el usuario haga scroll*/
     
     .card {
         margin-left: 0%; 
-       padding: 15px;
-       opacity: 80%;
-       background-color: #010301;
-       color: aliceblue;
-       justify-content: center !important;
-       align-items: center !important;
-       text-align: justify;
+        padding: 15px;
+        opacity: 80%;
+        background-color: #010301;
+        color: aliceblue;
+        justify-content: center !important;
+        align-items: center !important;
+        text-align: justify;
    }
 
+   .grafic {
+        width: 90%;
+    }
+
+   .chart {
+        margin-right: auto;
+        margin-left: auto;
+        height: 369px !important;
+        width: 370px !important;
+    }
 }
 
 
 @media only screen and (max-width: 820px) and (min-width: 621px) {
-    .grid{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
+    .logoNavBar{
+        width: 20%;
     }
-    .cont2 {
-        /* margin: 10px 1% 10px 10px; */
+
+    .cont1{
+        margin: 2px !important;
+        flex-direction: column;
+    }
+
+    .cont1 .labelDigimon{
+        margin-top: 2px !important;
+        margin-bottom: 2px !important;
+    }
+
+    .botonDigimon{
         width: 90%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
     }
-    .card {
-        margin-left: 0%; 
-       padding: 15px;
-       opacity: 80%;
-       background-color: #010301;
-       color: aliceblue;
-       justify-content: center !important;
-       align-items: center !important;
-       text-align: justify;
-   }
-}
 
-
-@media only screen and (max-width: 620px) and (min-width: 501px) {
     .grid{
         display: flex;
         flex-direction: column;
@@ -189,7 +208,6 @@ de la pagina aunque el usuario haga scroll*/
         justify-content: center;
     }
     .cont2 {
-        /* margin: 10px 1% 10px 10px; */
         width: 90%;
         display: flex;
         justify-content: center;
@@ -205,11 +223,91 @@ de la pagina aunque el usuario haga scroll*/
         align-items: center !important;
         text-align: justify;
    }
+   .grafic {
+        width: 90%;
+    }
+    .chart {
+        margin-right: auto;
+        margin-left: auto;
+        height: 369px !important;
+        width: 370px !important;
+    }
+}
+
+
+@media only screen and (max-width: 620px) and (min-width: 501px) {
+    .logoNavBar{
+        width: 20%;
+    }
+
+    .cont1{
+        margin: 2px !important;
+        flex-direction: column;
+    }
+
+    .cont1 .labelDigimon{
+        margin-top: 2px !important;
+        margin-bottom: 2px !important;
+    }
+
+    .botonDigimon{
+        width: 90%;
+    }
+
+    .grid{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .cont2 {
+        width: 90%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .card {
+        margin-left: 0%; 
+        padding: 15px;
+        opacity: 80%;
+        background-color: #010301;
+        color: aliceblue;
+        justify-content: center !important;
+        align-items: center !important;
+        text-align: justify;
+   }
+   .grafic {
+        width: 90%;
+    }
+    .chart {
+        margin-right: auto;
+        margin-left: auto;
+        height: 369px !important;
+        width: 370px !important;
+    }
 }
 
 
 /* Para 480px */
 @media only screen and (max-width: 500px) and (min-width: 341px) {
+    .logoNavBar{
+        width: 20%;
+    }
+
+    .cont1{
+        margin: 2px !important;
+        flex-direction: column;
+    }
+
+    .cont1 .labelDigimon{
+        margin-top: 2px !important;
+        margin-bottom: 2px !important;
+    }
+
+    .botonDigimon{
+        width: 90%;
+    }
+    
     .grid{
         display: flex;
         flex-direction: column;
@@ -233,10 +331,37 @@ de la pagina aunque el usuario haga scroll*/
        align-items: center !important;
        text-align: justify;
    }
+   .grafic {
+        width: 90%;
+    }
+    .chart {
+        margin-right: auto;
+        margin-left: auto;
+        height: 369px !important;
+        width: 370px !important;
+    }
 }
 
 /* Para 320px */
 @media only screen and (max-width: 340px) and (min-width: 5px) {
+    .logoNavBar{
+        width: 20%;
+    }
+
+    .cont1{
+        margin: 2px !important;
+        flex-direction: column;
+    }
+
+    .cont1 .labelDigimon{
+        margin-top: 2px !important;
+        margin-bottom: 2px !important;
+    }
+
+    .botonDigimon{
+        width: 90%;
+    }
+
     .grid{
         display: flex;
         flex-direction: column;
@@ -259,5 +384,14 @@ de la pagina aunque el usuario haga scroll*/
         justify-content: center !important;
         align-items: center !important;
         text-align: justify;
+    }
+    .grafic {
+        width: 90%;
+    }
+    .chart {
+        margin-right: auto;
+        margin-left: auto;
+        height: 369px !important;
+        width: 370px !important;
     }
 }
